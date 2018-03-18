@@ -1,0 +1,53 @@
+extends layout
+
+block content
+    h1= title
+    p
+
+  
+
+    #wrapper
+
+
+        #carInfo
+            h2 Dodatkowe informacje :
+            p
+                strong Rok produkcji :
+                |  <span id='carRokProdukcji'></span>
+                br
+                strong Pojemność :
+                |  <span id='carPojemnosc'></span>
+                br
+                strong Moc :
+                |  <span id='carMoc'></span>
+                br
+
+
+
+
+        h2 Lista :
+        #carList
+            table
+                thead
+                    th Model
+                    th Marka
+                    th #
+                tbody
+
+
+
+        h2 Dodaj samochód :
+        #addCar
+            fieldset
+                input#inputMarka(type='text', placeholder='marka')
+                input#inputModel(type='text', placeholder='model')
+                br
+                input#inputRokProdukcji(type='text', placeholder='rok produkcji')
+                input#inputPojemnosc(type='text', placeholder='pojemność (cm3)')
+                br
+                input#inputMoc(type='text', placeholder='moc (KM)')
+                br
+                button#btnAddCar Dodaj
+
+
+
